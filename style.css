@@ -262,3 +262,41 @@ footer {
     color: #666;
     line-height: 1.7;
 }
+
+
+@media (max-width: 600px) {
+
+    .category {
+        padding: 10px;
+        gap: 8px;
+        overflow-x: auto;
+    }
+
+    .category a {
+        padding: 10px 16px;
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+    .notice {
+        padding: 25px 15px;
+    }
+
+    .notice-box {
+        background: white;
+        border-radius: 15px;
+        padding: 18px;
+        margin-bottom: 15px;
+    }
+
+    .notice-box h2 {
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+
+    .notice-box p {
+        font-size: 14px;
+        line-height: 1.7;
+        word-break: keep-all;
+    }
+}
