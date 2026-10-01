@@ -29,30 +29,36 @@
     <!-- 카테고리 -->
     <div class="category">
 
-        <a href="liquor.html" >
+        <a href="menu.html" data-i18n="menu">
+            메뉴
+        </a>
+
+        <a href="liquor.html" data-i18n="liquor">
             주류
         </a>
 
-        <a href="set.html" class="active">
+        <a href="set.html" class="active" data-i18n="set">
             연맥 세트
         </a>
 
-        <a href="side.html">
+        <a href="side.html" data-i18n="side">
             사이드
         </a>
 
     </div>
 
 
+    <!-- 연맥 세트 메뉴 -->
     <div class="menu">
 
+        <!-- SET.1 -->
         <div class="card">
 
             <div class="info">
 
                 <h2>SET.1</h2>
 
-                <p>
+                <p data-i18n="set1_text">
                     연태(소)<br>
                     + 칭따오 대용량 640ml 1병<br>
                     + 음료 1
@@ -60,20 +66,22 @@
 
                 <span>
                     <del>25,000원</del>
-                    22,000원
+                    <span data-i18n="set1_price">22,000원</span>
                 </span>
 
             </div>
 
         </div>
 
+
+        <!-- SET.2 -->
         <div class="card">
 
             <div class="info">
 
                 <h2>SET.2</h2>
 
-                <p>
+                <p data-i18n="set2_text">
                     연태(중)<br>
                     + 칭따오 대용량 640ml 2병<br>
                     + 음료 1
@@ -81,20 +89,22 @@
 
                 <span>
                     <del>43,000원</del>
-                    40,000원
+                    <span data-i18n="set2_price">40,000원</span>
                 </span>
 
             </div>
 
         </div>
 
+
+        <!-- SET.3 -->
         <div class="card">
 
             <div class="info">
 
                 <h2>SET.3</h2>
 
-                <p>
+                <p data-i18n="set3_text">
                     연태(대)<br>
                     + 칭따오 대용량 640ml 3병<br>
                     + 음료 1
@@ -102,15 +112,18 @@
 
                 <span>
                     <del>75,000원</del>
-                    70,000원
+                    <span data-i18n="set3_price">70,000원</span>
                 </span>
 
             </div>
 
         </div>
 
-
     </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 

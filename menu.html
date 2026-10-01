@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>미양이네 - 메뉴</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- 로고 -->
+    <header>
+        <a href="main.html">
+            <img src="image.png" class="logo">
+        </a>
+    </header>
+
+
+    <!-- 카테고리 -->
+    <div class="category">
+
+        <a href="menu.html" class="active" data-i18n="menu">
+            메뉴
+        </a>
+
+        <a href="liquor.html" data-i18n="liquor">
+            주류
+        </a>
+
+        <a href="set.html" data-i18n="set">
+            연맥 세트
+        </a>
+
+        <a href="side.html" data-i18n="side">
+            사이드
+        </a>
+
+    </div>
+
+
+    <!-- 메뉴 -->
+    <div class="menu">
+
+        <!-- 양꼬치 무한리필 -->
+        <div class="card">
+
+            <div class="info">
+
+                <h2 data-i18n="unlimited_lamb">
+                    양꼬치 무한리필
+                </h2>
+
+                <p data-i18n="unlimited_lamb_text">
+                    양꼬치 + 목살꼬치 + 양삼겹꼬치 + 돈삼겹꼬치 + 소꼬치 + 소세지 / 떡 / 새우 꼬치
+                </p>
+
+                <span data-i18n="unlimited_lamb_price">
+                    21,900원
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- 돼지빼고 무한리필 -->
+        <div class="card">
+
+            <div class="info">
+
+                <h2 data-i18n="no_pork_unlimited">
+                    돼지빼고 무한리필
+                </h2>
+
+                <p data-i18n="no_pork_unlimited_text">
+                    양꼬치 + 양삼겹꼬치 + 소꼬치 + 소세지 / 떡 / 새우 꼬치
+                </p>
+
+                <span data-i18n="no_pork_unlimited_price">
+                    25,900원
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

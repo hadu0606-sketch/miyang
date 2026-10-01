@@ -29,15 +29,19 @@
     <!-- 카테고리 -->
     <div class="category">
 
-        <a href="liquor.html">
+        <a href="menu.html" data-i18n="menu">
+            메뉴
+        </a>
+
+        <a href="liquor.html" data-i18n="liquor">
             주류
         </a>
 
-        <a href="set.html">
+        <a href="set.html" data-i18n="set">
             연맥 세트
         </a>
 
-        <a href="side.html">
+        <a href="side.html" data-i18n="side">
             사이드
         </a>
 
@@ -50,13 +54,32 @@
         <!-- 이용 안내 -->
         <section class="notice-box">
 
-            <h2>📌 이용 안내</h2>
+            <h2 data-i18n="usage_title">
+                📌 이용 안내
+            </h2>
 
-            <p>
+            <p data-i18n="usage_text">
                 기본 이용 시간은 <b>2시간</b> 입니다.<br>
-                테이블 및 불판이 많이 뜨겁습니다.
+                테이블 밑 불판이 많이 뜨겁습니다.
                 다리를 깊게 넣으시면 화상 위험이 있으니
                 <b>주의</b> 부탁드립니다.
+            </p>
+
+        </section>
+
+
+        <!-- 리필 안내 -->
+        <section class="notice-box">
+
+            <h2 data-i18n="refill_title">
+                🥩 리필 안내
+            </h2>
+
+            <p data-i18n="refill_text">
+                리필을 원하실 경우 벨을 눌러 직원을 불러주세요!<br>
+                리필은 고기 지정이 <b>불가능</b>합니다.<br>
+                기본 리필에는 소세지 / 떡 / 새우 꼬치가 <b>포함되지 않습니다.</b>
+                원하시는 수량을 따로 말씀 해주세요!!
             </p>
 
         </section>
@@ -65,9 +88,11 @@
         <!-- 셀프바 안내 -->
         <section class="notice-box">
 
-            <h2>🍴 셀프바 안내</h2>
+            <h2 data-i18n="selfbar_title">
+                🍴 셀프바 안내
+            </h2>
 
-            <p>
+            <p data-i18n="selfbar_text">
                 기본 반찬 및 소스는 <b>셀프바</b>에서 이용하실 수 있습니다.<br>
                 라면은 셀프로 조리해서 드실 수 있습니다.<br>
                 다 드신 라면 냄비는 테이블에 두시거나
@@ -81,9 +106,11 @@
         <!-- 화장실 안내 -->
         <section class="notice-box">
 
-            <h2>🚻 화장실 안내</h2>
+            <h2 data-i18n="bathroom_title">
+                🚻 화장실 안내
+            </h2>
 
-            <p>
+            <p data-i18n="bathroom_text">
                 반층 올라가시면 미친양꼬치 전용 화장실이 있습니다!<br>
                 <b>입구 옆 냉장고에 붙어있는 비밀번호 확인</b>해주세요!!
             </p>
@@ -94,15 +121,77 @@
         <!-- 문의 -->
         <section class="notice-box">
 
-            <h2>📞 문의</h2>
+            <h2 data-i18n="contact_title">
+                📞 문의
+            </h2>
 
-            <p>
+            <p data-i18n="contact_text">
                 궁금하신 사항은 직원에게 문의해주세요.
             </p>
 
         </section>
 
     </main>
+
+
+    <!-- 언어 선택 팝업 -->
+    <div id="languageModal" class="modal">
+
+        <div class="modal-box">
+
+            <h2 data-i18n="language_title">
+                언어를 선택해주세요
+            </h2>
+
+            <p data-i18n="language_text">
+                원하시는 언어를 선택해주세요.
+            </p>
+
+            <div class="language-buttons">
+
+                <button onclick="selectLanguage('ko')">
+                    🇰🇷 한국어
+                </button>
+
+                <button onclick="selectLanguage('zh')">
+                    🇨🇳 中文
+                </button>
+
+                <button onclick="selectLanguage('en')">
+                    🇺🇸 English
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- 주문 안내 팝업 -->
+    <div id="orderModal" class="modal">
+
+        <div class="modal-box order-box">
+
+            <h2 id="orderTitle">
+                📢 주문 안내
+            </h2>
+
+            <p id="orderText">
+                주문은 직원을 불러주세요.
+            </p>
+
+            <button class="close-button" onclick="closeOrderModal()">
+                확인
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
