@@ -235,7 +235,7 @@ const translations = {
         unlimited_lamb: "羊肉串无限续",
 
         unlimited_lamb_text:
-            "羊肉串 + 羊肩肉串 + 羊五花肉串 + 猪五花肉串 + 牛肉串 + 香肠 / 年糕 / 虾串",
+            "羊肉串 + 猪颈肉串 + 羊五花肉串 + 猪五花肉串 + 牛肉串 + 香肠 / 年糕 / 虾串",
 
         unlimited_lamb_price: "21,900韩元",
 
@@ -395,7 +395,7 @@ const translations = {
         unlimited_lamb: "All-You-Can-Eat Lamb Skewers",
 
         unlimited_lamb_text:
-            "Lamb skewers + Lamb shoulder skewers + Lamb belly skewers + Pork belly skewers + Beef skewers + Sausage / Rice cake / Shrimp skewers",
+            "Lamb skewers + Pork neck skewers + Lamb belly skewers + Pork belly skewers + Beef skewers + Sausage / Rice cake / Shrimp skewers",
 
         unlimited_lamb_price: "21,900 KRW",
 
